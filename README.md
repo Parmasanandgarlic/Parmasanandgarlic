@@ -1,16 +1,16 @@
-## Hi there 👋
+> *"Do you have the patience to wait until your mud settles and the water is clear?"* — Lao Tzu
 
-<!--
-**Parmasanandgarlic/Parmasanandgarlic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://wttr.in/Vancouver_0pq.png" alt="Vancouver Weather" height="100" />
+  <img src="https://wttr.in/San+Jose+Costa+Rica_0pq.png" alt="San Jose Weather" height="100" />
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🔧 Current Focus
+* **[FarmDash](https://farmdash.one):** Working on the backend architecture for a zero-custody DeFi operating layer. Building out MCP tool surfaces and OpenClaw skill distributions.
+* **[AutoPromo](https://autopromo.xyz):** Maintaining a social automation engine. Currently migrating legacy API routes to authenticated browser-client GraphQL mutations.
+
+### 🛠️ Stack
+* **Infrastructure:** Node.js, TypeScript, Python, Supabase, GraphQL.
+* **Agentic/Web3:** Model Context Protocol (MCP), OpenClaw, LangGraph, EVM/Solana Forensics.
