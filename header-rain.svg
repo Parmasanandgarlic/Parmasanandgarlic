@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" preserveAspectRatio="none" role="img" aria-label="Ethereal dark waves with abstract drifting clouds and light rain mist">
+  <defs>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a1b2e"/>
+      <stop offset="0.28" stop-color="#2f3252"/>
+      <stop offset="0.52" stop-color="#4a3f6b"/>
+      <stop offset="0.74" stop-color="#3d5c50"/>
+      <stop offset="1" stop-color="#242642"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c4a7e7" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#9ccfd8" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#b7e4c7" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="haze" x="-60%" y="-80%" width="220%" height="260%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="mistBlur" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+    <g id="hazeCloud">
+      <ellipse cx="0" cy="0" rx="72" ry="20" fill="#c4a7e7" opacity="0.20"/>
+      <ellipse cx="-42" cy="8" rx="52" ry="16" fill="#e9e4f5" opacity="0.13"/>
+      <ellipse cx="44" cy="6" rx="58" ry="15" fill="#b7e4c7" opacity="0.12"/>
+      <ellipse cx="6" cy="-10" rx="44" ry="18" fill="#ffffff" opacity="0.10"/>
+      <ellipse cx="-8" cy="12" rx="66" ry="12" fill="#1a1b2e" opacity="0.16"/>
+    </g>
+    <g id="rain">
+      <line x1="0" y1="0" x2="-4" y2="12" stroke="#cfe8d8" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="24" y1="4" x2="20" y2="16" stroke="#d9cdf2" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="-26" y1="4" x2="-30" y2="16" stroke="#eafaf0" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="48" y1="0" x2="44" y2="12" stroke="#cfe8d8" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="-50" y1="0" x2="-54" y2="12" stroke="#d9cdf2" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <path d="M0,0 L1200,0 L1200,82 C1020,118 880,58 700,88 C520,118 380,62 200,90 C120,102 50,96 0,84 Z" fill="url(#wave)"/>
+  <path d="M0,0 L1200,0 L1200,64 C1040,96 900,42 720,70 C540,98 400,48 220,74 C130,86 55,80 0,68 Z" fill="url(#wave2)"/>
+  <path d="M0,108 C220,84 420,122 640,100 C860,78 1020,116 1200,92 L1200,140 L0,140 Z" fill="#1a1b2e" opacity="0.45"/>
+  <g filter="url(#mistBlur)" opacity="0.55">
+    <ellipse cx="300" cy="88" rx="180" ry="13" fill="#8a7fb8"><animate attributeName="cx" values="260;360;260" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.25;0.5;0.25" dur="7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="860" cy="96" rx="210" ry="14" fill="#5f8a74"><animate attributeName="cx" values="900;790;900" dur="13s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.42;0.2" dur="8s" repeatCount="indefinite"/></ellipse>
+  </g>
+  <g filter="url(#haze)"><g><animateTransform attributeName="transform" type="translate" values="235,38; 290,36; 235,38" dur="14s" repeatCount="indefinite"/><use href="#hazeCloud"/><g opacity="0.5"><animateTransform attributeName="transform" type="translate" values="0,16; -3,32; 0,16" dur="1.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.08;0.5;0.08" dur="1.9s" repeatCount="indefinite"/><use href="#rain"/></g></g></g>
+  <g filter="url(#haze)"><g><animateTransform attributeName="transform" type="translate" values="625,30; 570,33; 625,30" dur="17s" repeatCount="indefinite"/><g transform="scale(0.85)"><use href="#hazeCloud"/></g><g opacity="0.4"><animateTransform attributeName="transform" type="translate" values="0,12; -3,28; 0,12" dur="2.2s" begin="-0.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.06;0.42;0.06" dur="2.2s" begin="-0.7s" repeatCount="indefinite"/><use href="#rain" transform="scale(0.8)"/></g></g></g>
+  <g filter="url(#haze)"><g><animateTransform attributeName="transform" type="translate" values="985,42; 1040,40; 985,42" dur="12s" repeatCount="indefinite"/><g transform="scale(1.15)"><use href="#hazeCloud"/></g><g opacity="0.5"><animateTransform attributeName="transform" type="translate" values="0,18; -3,34; 0,18" dur="1.7s" begin="-1.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.08;0.5;0.08" dur="1.7s" begin="-1.1s" repeatCount="indefinite"/><use href="#rain"/></g></g></g>
+  <ellipse cx="600" cy="16" rx="430" ry="24" fill="#c4a7e7" opacity="0.08" filter="url(#soft)"/>
+</svg>
